@@ -1,0 +1,7 @@
+.listItemLabel {
+    @apply text-sm font-medium text-gray-500;
+}
+
+.listItemAction {
+    @apply min-w-fit rounded-md text-sm font-medium text-indigo-600 hover:text-indigo-500 focus:outline-none cursor-pointer;
+}

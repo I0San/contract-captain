@@ -1,0 +1,16 @@
+.tab {
+  @apply 
+    whitespace-nowrap
+    pb-4
+    px-1
+    border-b-2
+    font-medium
+    text-sm
+    ui-not-selected:border-transparent
+    ui-not-selected:text-gray-500
+    ui-not-selected:hover:text-gray-700
+    ui-not-selected:hover:border-gray-300 
+    ui-selected:border-indigo-500 
+    ui-selected:text-indigo-600
+    focus-visible:outline-none;
+}
