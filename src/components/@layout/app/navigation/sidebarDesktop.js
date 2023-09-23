@@ -22,7 +22,9 @@ export default function SidebarDesktop({ navigationPrimary, navigation, navigati
                         <div className="flex items-center">
                             <div className="ml-3">
                                 <p className="text-sm font-medium text-white">Contract Captain</p>
-                                <p className="text-xs font-medium text-gray-300 group-hover:text-gray-200">Repository on GitHub</p>
+                                <p className="text-xs font-medium text-gray-300 group-hover:text-gray-200">
+                                    <a href="https://github.com/I0San/contract-captain" alt="" target="_blank" rel="noreferrer" >Repository on GitHub</a>
+                                </p>
                             </div>
                         </div>
                     </div>

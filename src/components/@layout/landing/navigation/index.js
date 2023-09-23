@@ -7,7 +7,7 @@ import { classNames } from '../../../../app/utils/common'
 const navigation = [
     { name: 'Home', href: '/', current: true },
     { name: 'App', href: '/app/dashboard', current: false },
-    { name: 'GitHub', href: '/', current: false },
+    // { name: 'GitHub', href: 'https://github.com/I0San/contract-captain', current: false },
 ]
 
 export default function Navigation() {
@@ -39,6 +39,17 @@ export default function Navigation() {
                                                     {item.name}
                                                 </Link>
                                             ))}
+                                            <a href="https://github.com/I0San/contract-captain"
+                                               className={classNames(
+                                                'text-gray-300 hover:bg-gray-700 hover:text-white',
+                                                'px-3 py-2 rounded-md text-sm font-medium'
+                                                )}
+                                                aria-current={undefined}
+                                                target='_blank'
+                                                alt='GitHub' rel="noreferrer"
+                                            >
+                                                GitHub
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -81,6 +92,19 @@ export default function Navigation() {
                                     {item.name}
                                 </Disclosure.Button>
                             ))}
+                            <Disclosure.Button
+                                as="a"
+                                href="https://github.com/I0San/contract-captain"
+                                className={classNames(
+                                    'text-gray-300 hover:bg-gray-700 hover:text-white',
+                                    'block px-3 py-2 rounded-md text-base font-medium'
+                                )}
+                                aria-current={undefined}
+                                target='_blank'
+                                alt='GitHub' rel="noreferrer"
+                            >
+                                GitHub
+                            </Disclosure.Button>
                         </div>
                     </Disclosure.Panel>
                 </>
