@@ -12,6 +12,7 @@ import ValidationExlamation from '../@core/forms/validationExlamation'
 import { CheckIcon, ChevronUpDownIcon } from '@heroicons/react/24/outline'
 import { addContract, addProject } from '../../app/store/features/projects/projectsSlice'
 import { isAddress, isABI, isCode, remove0x, classNames } from '../../app/utils/common'
+import { logEvent } from '../../app/utils/googleAnalytics'
 
 const inputWrapStyle = 'relative mt-1 rounded-md shadow-sm'
 const noErrorStyle = 'border-gray-300'
@@ -53,6 +54,7 @@ export default function ModalAddContract({ open, onClose }) {
     const onSubmit = data => {
         try {
             if (addNewProject) {
+                logEvent("Project", "Add", "New")
                 const projectId = nanoid()
                 const contractId = nanoid()
                 dispatch(addProject({
@@ -68,6 +70,7 @@ export default function ModalAddContract({ open, onClose }) {
                     }]
                 }), history.push('/app/'+projectId+'/' + contractId))
             } else {
+                logEvent("Contract", "Add", "New")
                 const id = nanoid()
                 dispatch(addContract({
                     projectId: selectedProject.id,

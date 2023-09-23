@@ -10,6 +10,7 @@ import { toast } from 'react-hot-toast'
 import { useHistory } from 'react-router-dom'
 import { ArrowRightIcon } from '@heroicons/react/24/outline'
 import { nanoid } from '@reduxjs/toolkit'
+import { logEvent } from '../../app/utils/googleAnalytics'
 
 const inputWrapStyle = 'relative mt-1 rounded-md shadow-sm'
 const noErrorStyle = 'border-gray-300'
@@ -37,6 +38,7 @@ export default function LandingAddContract() {
 
     const onSubmit = data => {
         try {
+            logEvent("Contract", "Add", "Landing")
             const id = nanoid()
             dispatch(addContract({
                 projectId: 'IoSanX696IQBDnOmIs', // 'Default'

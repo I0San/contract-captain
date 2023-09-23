@@ -43,6 +43,7 @@ const client = createClient(
         chains,
         options: {
           qrcode: true,
+          projectId: `${process.env.REACT_APP_WALLET_CONNECT_PROJECT_ID}`,
         },
       }),
       new InjectedConnector({
