@@ -87,4 +87,11 @@ yarn build
 This repository is licensed under the MIT license. See the [LICENSE](LICENSE) file for more information.
 
 ## Authors
-IoSan @ Spartan Development d.o.o.
+@IoSan - iosan@protonmail.com
+
+## Acknowledgements
+@doktorBabo
+
+## Contributors
+
+Feel free to get in touch if you want to contribute to the project.
