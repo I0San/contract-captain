@@ -8,14 +8,16 @@ import PageLanding from './pages/Landing'
 import PageContract from './pages/Contract'
 import PageDashboard from './pages/Dashboard'
 import PageSettings from './pages/Settings'
+import GA from './components/@core/ga'
 
 
 export default function App() {
   useEffect(() => {
-    console.log(`v${process.env.REACT_APP_VERSION}}`)
+      console.log(`v${process.env.REACT_APP_VERSION}`)
   }, [])
   return (
     <Router>
+      <GA />
       <ScrollToTop>
         <Switch>
           <Route path='/app/:path?'>
