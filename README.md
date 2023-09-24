@@ -26,8 +26,24 @@ EVM: 0x386A5a8b33234B5eb22dAeE45C1693c8591cB4a2
 - execute write functions
 - displays ABI
 - displays Code
+- generates React Hooks for all methods
 - no backend, uses localstorage
 
+![Home](screenshot-1.jpg)  
+  
+![Getters](screenshot-2.jpg)  
+
+![Setters](screenshot-3.jpg)  
+
+![ABI](screenshot-4.jpg)  
+
+![Code](screenshot-5.jpg)  
+
+![React Hooks](screenshot-6.jpg)  
+
+![Project Settings](screenshot-7.jpg)  
+
+![Workspace Settings](screenshot-8.jpg)
 
 ## Planned features
 - migration script in case of state arhitecture change
@@ -91,6 +107,7 @@ This repository is licensed under the MIT license. See the [LICENSE](LICENSE) fi
 
 ## Acknowledgements
 @doktorBabo
+@formator
 
 ## Contributors
 
